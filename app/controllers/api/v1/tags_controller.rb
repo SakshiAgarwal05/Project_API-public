@@ -1,5 +1,5 @@
 # View all tags
-class TagsController < ApplicationController
+class Api::V1:: TagsController < ApplicationController
   # list all tags
   # ====URL
   #   /tags [GET]

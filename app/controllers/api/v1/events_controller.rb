@@ -1,6 +1,6 @@
 # Controller to manage jobs[../Job.html] in talent namespace.
 # Talent van accept and reject the job[../Job.html] offers.
-class EventsController < ApplicationController
+class Api::V1:: EventsController < ApplicationController
   # show an event
   # ====URL
   #  /events/ID?invitation_token=TOKEN [GET]

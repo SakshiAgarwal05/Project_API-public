@@ -1,4 +1,4 @@
-class LocationsController < ApplicationController
+class Api::V1:: LocationsController < ApplicationController
   # list locations
   # ====URL
   # /locations [GET]

@@ -1,6 +1,6 @@
 require 'jwt'
 
-class SharelinksController < ApplicationController
+class Api::V1:: SharelinksController < ApplicationController
   # /sharelinks/:id [GET]
   def show
     @share_link = ShareLink.where(token: params[:id]).first

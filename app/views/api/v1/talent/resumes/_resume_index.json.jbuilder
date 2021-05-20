@@ -1,0 +1,6 @@
+json.id talents_jobs_resume.id
+json.resume_path talents_jobs_resume.resume_path
+json.resume_path_pdf talents_jobs_resume.rppdf
+json.created_at talents_jobs_resume.created_at
+json.updated_at talents_jobs_resume.updated_at
+json.if_primary talents_jobs_resume.if_primary

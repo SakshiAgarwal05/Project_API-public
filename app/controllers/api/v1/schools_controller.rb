@@ -1,5 +1,5 @@
 # View all schools
-class SchoolsController < ApplicationController
+class Api::V1:: SchoolsController < ApplicationController
 
   # list schools
   # ====URL

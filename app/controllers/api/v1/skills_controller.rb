@@ -1,5 +1,5 @@
 # view all skills
-class SkillsController < ApplicationController
+class Api::V1:: SkillsController < ApplicationController
 
   # list skills
   # ====URL

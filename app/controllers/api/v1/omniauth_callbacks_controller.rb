@@ -1,5 +1,5 @@
 # controller for logging in with linked in.
-class OmniauthCallbacksController < Devise::OmniauthCallbacksController
+class Api::V1:: OmniauthCallbacksController < Devise::OmniauthCallbacksController
   def self.provides_callback_for(provider)
     class_eval %Q{
       def #{provider}

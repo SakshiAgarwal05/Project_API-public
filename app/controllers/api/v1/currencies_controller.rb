@@ -1,5 +1,5 @@
 # View currency[Currency.html]
-class CurrenciesController < ApplicationController
+class Api::V1:: CurrenciesController < ApplicationController
   respond_to :json
 
   # list positions

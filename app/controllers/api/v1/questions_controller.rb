@@ -1,5 +1,5 @@
 # View default questions[Question.html]
-class QuestionsController < ApplicationController
+class Api::V1:: QuestionsController < ApplicationController
   respond_to :json
 
   # list all questions

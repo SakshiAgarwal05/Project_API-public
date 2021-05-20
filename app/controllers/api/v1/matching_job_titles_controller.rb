@@ -1,5 +1,5 @@
 # View all MatchingJobTitles
-class MatchingJobTitlesController < ApplicationController
+class Api::V1:: MatchingJobTitlesController < ApplicationController
 
   # list matching job titles
   # ====URL

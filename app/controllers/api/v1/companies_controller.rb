@@ -1,5 +1,5 @@
 # View all companies
-class CompaniesController < ApplicationController
+class Api::V1:: CompaniesController < ApplicationController
   # list companies
   # ====URL
   # /companies [GET]

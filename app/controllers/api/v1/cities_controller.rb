@@ -1,5 +1,5 @@
 # view all cities[city.html] cor a state[State.html] or country[Country.html].
-class CitiesController < ApplicationController
+class Api::V1:: CitiesController < ApplicationController
   respond_to :json
 
   # list all or cities
@@ -10,6 +10,7 @@ class CitiesController < ApplicationController
   #   state_id
   #   query
   def index
+    
     params.merge!({per_page: per_page, page: page_count})
     if params[:query].present?
       cities, total = City.search_city(params.permit(:query, :state_id, :country_id, :per_page, :page))

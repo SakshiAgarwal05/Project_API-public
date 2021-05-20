@@ -1,5 +1,5 @@
 #TODO: TEST CASES NOT WRITTEN
-class ConstantsController < ApplicationController
+class Api::V1:: ConstantsController < ApplicationController
 
   # list all the constants
   # ===URL

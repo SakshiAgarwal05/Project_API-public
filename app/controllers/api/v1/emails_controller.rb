@@ -1,4 +1,4 @@
-class EmailsController < ApplicationController
+class Api::V1:: EmailsController < ApplicationController
   skip_load_and_authorize_resource only: [:view]
   http_basic_authenticate_with  name: ENV['WEBHOOK_USER'],
                                 password: ENV['WEBHOOK_PASSWORD'],

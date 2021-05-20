@@ -1,5 +1,5 @@
 # View all vendors who provide certificates
-class VendorsController < ApplicationController
+class Api::V1:: VendorsController < ApplicationController
 
   # list all list of vendors
   # ====URL

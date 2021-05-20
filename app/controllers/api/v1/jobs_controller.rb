@@ -1,5 +1,5 @@
 # Controller to view Jobs[../Job.html].
-class JobsController < ApplicationController
+class Api::V1:: JobsController < ApplicationController
 
   skip_load_and_authorize_resource only: [:update]
   before_action :find_public_job, only: [:apply_to_job, :earning]

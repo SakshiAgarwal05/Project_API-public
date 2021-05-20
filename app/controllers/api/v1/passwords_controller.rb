@@ -1,4 +1,4 @@
-class PasswordsController < Devise::SessionsController
+class Api::V1:: PasswordsController < Devise::SessionsController
 
   def create
     self.resource = resource_class.reset_password(params[:user][:email] || params[:talent][:email])

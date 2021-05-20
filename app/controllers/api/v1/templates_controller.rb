@@ -1,5 +1,5 @@
 # TemplatesController
-class TemplatesController < ApplicationController
+class Api::V1:: TemplatesController < ApplicationController
   # List all templates names
   # ====URL
   #   /templates [GET]

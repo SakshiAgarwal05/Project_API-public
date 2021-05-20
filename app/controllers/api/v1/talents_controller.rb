@@ -1,5 +1,5 @@
 # API for constants defined in talents[talent.rb]
-class TalentsController < ApplicationController
+class Api::V1:: TalentsController < ApplicationController
   respond_to :json
 
   # List all <tt>Talent::BENEFITS</tt>

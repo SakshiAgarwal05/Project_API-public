@@ -1,5 +1,5 @@
 # List all states[State.html]
-class StatesController < ApplicationController
+class Api::V1:: StatesController < ApplicationController
   respond_to :json
 
   # list states

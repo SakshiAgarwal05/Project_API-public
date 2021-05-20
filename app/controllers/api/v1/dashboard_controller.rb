@@ -1,7 +1,7 @@
 # Not required.
 require 'net/http'
 require 'uri'
-class DashboardController < ApplicationController
+class Api::V1:: DashboardController < ApplicationController
   respond_to :json
 
   def index

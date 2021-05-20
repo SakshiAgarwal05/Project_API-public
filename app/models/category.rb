@@ -1,4 +1,5 @@
 class Category < ApplicationRecord
+
   include Elasticsearch::Model
   include Elasticsearch::Model::Callbacks
 
@@ -34,4 +35,4 @@ class Category < ApplicationRecord
       search.search_category
     end
   end
-end
+ end

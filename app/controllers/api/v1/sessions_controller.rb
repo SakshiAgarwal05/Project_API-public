@@ -1,5 +1,5 @@
 # Overwrite Devise registration controller.
-class SessionsController < Devise::SessionsController
+class Api::V1:: SessionsController < Devise::SessionsController
   
   before_action :user_or_talent, only: [:create]
 

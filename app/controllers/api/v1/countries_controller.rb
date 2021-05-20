@@ -1,5 +1,5 @@
 # View all countries[Country.html]
-class CountriesController < ApplicationController
+class Api::V1:: CountriesController < ApplicationController
   respond_to :json
 
   # list all or truncated list of countries
@@ -11,6 +11,7 @@ class CountriesController < ApplicationController
   # page (page number)
   # per_page (records per page)
   def index
+    
     if params[:query].present?
       @countries, total_count = Country.search_country(params.permit(:query, :per_page, :page))
     elsif params[:usa_canada].present?

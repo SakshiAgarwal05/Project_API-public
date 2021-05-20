@@ -1,0 +1,25 @@
+default: &default
+  :number_of_shards: <%= ENV.fetch('API3_ES_NUMBER_OF_SHARDS') { 1 } %>
+  :number_of_replicas: <%= ENV.fetch('API3_ES_NUMBER_OF_REPLICAS') { 0 } %>
+  :retry_on_failure: <%= ENV.fetch('API3_ES_RETRY_ON_FAILURE') { 1 } %>
+  :log: <%= ENV.fetch('API3_ES_LOG') { false } %>
+  :url: <%= ENV.fetch('ELASTICSEARCH_HOST') { 'http://localhost:9200' } %>
+
+test:
+  <<: *default
+  :index_suffix: !ruby/int <%= ENV['TEST_ENV_NUMBER'] %>
+
+development:
+  <<: *default
+
+uat:
+  <<: *default
+  :url: <%= ENV.fetch('ELASTICSEARCH_HOST') { 'http://elasticsearch-uat.default.svc.cluster.local:9200' } %>
+
+demo:
+  <<: *default
+  :url: <%= ENV.fetch('ELASTICSEARCH_HOST') { 'http://elasticsearch-demo.default.svc.cluster.local:9200' } %>
+
+production:
+  <<: *default
+  :url: <%= ENV.fetch('ELASTICSEARCH_HOST') { 'http://elasticsearch-production.default.svc.cluster.local:9200' } %>

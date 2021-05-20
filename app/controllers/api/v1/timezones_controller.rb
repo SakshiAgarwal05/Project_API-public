@@ -1,5 +1,5 @@
 # View all timezone[Timezone.html]
-class TimezonesController < ApplicationController
+class Api::V1:: TimezonesController < ApplicationController
   respond_to :json
 
   # list timezones

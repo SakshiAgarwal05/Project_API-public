@@ -1,4 +1,4 @@
-class TalentsJobsController < ApplicationController
+class Api::V1:: TalentsJobsController < ApplicationController
   skip_load_and_authorize_resource
   before_action :find_talents_job, only: :show
 

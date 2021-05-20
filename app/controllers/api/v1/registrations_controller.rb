@@ -1,4 +1,4 @@
-class RegistrationsController < Devise::RegistrationsController
+class Api::V1:: RegistrationsController < Devise::RegistrationsController
 
   # POST /resource
   # copied from devise ..

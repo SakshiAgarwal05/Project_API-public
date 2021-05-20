@@ -1,5 +1,5 @@
 # View all degrees
-class DegreesController < ApplicationController
+class Api::V1:: DegreesController < ApplicationController
   # list degrees
   # ====URL
   # /degrees [GET]

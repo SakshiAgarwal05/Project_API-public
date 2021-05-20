@@ -1,5 +1,5 @@
 # View all positions
-class PositionsController < ApplicationController
+class Api::V1:: PositionsController < ApplicationController
 
   # list positions
   # ====URL

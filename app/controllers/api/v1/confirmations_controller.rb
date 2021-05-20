@@ -1,6 +1,6 @@
 # TODO: TEST CASES NOT WRITTEN
 # overwrite devise confirmation controller.
-class ConfirmationsController < Devise::ConfirmationsController
+class Api::V1:: ConfirmationsController < Devise::ConfirmationsController
   # overwrite default confirmation from devise.
   # ====URL
   #   /talents/confirmation

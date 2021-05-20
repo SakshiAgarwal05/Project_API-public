@@ -1,5 +1,5 @@
 # view all industries[Industry.html]
-class IndustriesController < ApplicationController
+class Api::V1:: IndustriesController < ApplicationController
 
   # list positions
   # ====URL

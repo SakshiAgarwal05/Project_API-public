@@ -1,5 +1,5 @@
 # List all certificates
-class CertificatesController < ApplicationController
+class Api::V1:: CertificatesController < ApplicationController
 
   # list certificates
   # ====URL

@@ -1,7 +1,7 @@
 # Get credentials for S3 upload.
 # AWS_SECRET_KEY: s3 secret
 # AWS_ACCESS_KEY: s3 access key
-class S3Controller < ApplicationController
+class Api::V1:: S3Controller < ApplicationController
   # retrun aws s3 details required to upload a file
   # We will use a different setting for uploading a resume
   # ====URL
