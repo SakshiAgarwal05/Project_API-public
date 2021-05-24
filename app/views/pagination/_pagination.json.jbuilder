@@ -1,5 +1,4 @@
 json.pagination do
-  debugger
   json.per_page per_page
   json.page page_count
   if @total_count
