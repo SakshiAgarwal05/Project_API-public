@@ -17,6 +17,7 @@ class Api::V1:: JobsController < ApplicationController
   #   cilent_id
   def index
     jobs = Job.published_to_cs_including_onhold
+    debugger
     jobs = jobs.not_saved_by_talent(current_talent) if current_talent
     jobs = jobs.where(client_id: params[:client_id]) if params[:client_id]
     @jobs = jobs.includes(:client, :category)

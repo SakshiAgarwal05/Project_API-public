@@ -10,7 +10,7 @@ class Job < ApplicationRecord
   include AddAbility
   include Billing
   include GlobalID::Identification
-  include Fields::FieldsJob
+  #include Fields::FieldsJob
   include Constants::ConstantsJob
   include Validations::ValidationsJob
   include ModelCallback::CallbacksJob
@@ -20,12 +20,12 @@ class Job < ApplicationRecord
   include CurrentUser
   include Concerns::Addressable
   include Concerns::JobRecruiters
-  include Concerns::JobListingTabValues
+ # include Concerns::JobListingTabValues
   include BeelineJob
   include Dateable
-  include Concerns::EnterpriseJobListing
-  include Metrics::JobMetrics
-  include Concerns::CommonCsmmCallbacks
+  # include Concerns::EnterpriseJobListing
+  # include Metrics::JobMetrics
+  # include Concerns::CommonCsmmCallbacks
 
   cattr_accessor :for_team
   cattr_accessor :team_member

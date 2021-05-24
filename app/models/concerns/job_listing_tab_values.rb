@@ -1,8 +1,8 @@
-module Concerns::JobListingTabValues
-  extend ActiveSupport::Concern
-  include Admin::JobsHelper
-  include Metrics::CommonMetrics
-  include ApplicationHelper
+#module Concerns::JobListingTabValues
+  #extend ActiveSupport::Concern
+  #include Admin::JobsHelper
+  #include Metrics::CommonMetrics
+  #include ApplicationHelper
 
 
   module ClassMethods
@@ -134,4 +134,3 @@ module Concerns::JobListingTabValues
   def job_disqualified
     tile_response(self, ['Disqualified'])[0][:count]
   end
-end

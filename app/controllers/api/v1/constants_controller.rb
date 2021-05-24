@@ -6,5 +6,6 @@ class Api::V1:: ConstantsController < ApplicationController
   #   /constants [GET]
   # ====PARAMETERS
   def index
+    
   end
 end
