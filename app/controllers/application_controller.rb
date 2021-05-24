@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
   # before_action :check_valid_subdomains
   # before_action :set_headers, except: :unmatchd_routes
   # before_action :configure_permitted_parameters, if: :devise_controller?, except: :unmatchd_routes
-  # before_action :set_current_talent, except: :unmatchd_routes
+before_action :set_current_talent, except: :unmatchd_routes
   # before_action :check_for_valid_action, except: :unmatchd_routes
   # before_action :add_new_skills, except: :unmatchd_routes
   # before_action :add_new_positions, except: :unmatchd_routes
@@ -186,27 +186,27 @@ class ApplicationController < ActionController::Base
   #   end
   # end
 
-  # def authenticate_talent!
-  #   respond_to do |format|
-  #     format.html { super }
-  #     format.json { unauthorized! unless current_talent }
-  #     format.pdf { unauthorized! unless current_talent }
-  #     format.docx { unauthorized! unless current_talent }
-  #     format.csv { unauthorized! unless current_talent }
-  #     format.ics { unauthorized! unless current_user }
-  #   end
-  # end
+  def authenticate_talent!
+    respond_to do |format|
+      format.html { super }
+      format.json { unauthorized! unless current_talent }
+      format.pdf { unauthorized! unless current_talent }
+      format.docx { unauthorized! unless current_talent }
+      format.csv { unauthorized! unless current_talent }
+      format.ics { unauthorized! unless current_user }
+    end
+  end
 
-  # def current_talent
-  #   respond_to do |format|
-  #     format.html { super }
-  #     format.json { @current_talent ||= set_current_talent }
-  #     format.pdf { @current_talent ||= set_current_talent }
-  #     format.docx { @current_talent ||= set_current_talent }
-  #     format.csv { @current_talent ||= set_current_talent }
-  #     format.ics { @current_talent ||= set_current_talent }
-  #   end
-  # end
+  def current_talent
+    respond_to do |format|
+      format.html { super }
+      format.json { @current_talent ||= set_current_talent }
+      format.pdf { @current_talent ||= set_current_talent }
+      format.docx { @current_talent ||= set_current_talent }
+      format.csv { @current_talent ||= set_current_talent }
+      format.ics { @current_talent ||= set_current_talent }
+    end
+  end
 
   # def check_for_valid_action
   #   return if request.headers["Authorization"].present? ||
